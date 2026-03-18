@@ -1,66 +1,123 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
+import {
+  Container,
+  Title,
+  Text,
+  Button,
+  Group,
+  Stack,
+  Card,
+  Badge,
+} from "@mantine/core";
+
+function Hero() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <Container size="md" py={80}>
+      <Stack gap="md">
+        <Title order={1}>Hi, I&apos;m Dani</Title>
+        <Text size="lg">
+          Frontend Developer specializing in React, TypeScript, and scalable UI
+          systems.
+        </Text>
+        <Group>
+          <Button component="a" href="#projects">
+            View Projects
+          </Button>
+          <Button variant="outline" component="a" href="#contact">
+            Contact Me
+          </Button>
+        </Group>
+      </Stack>
+    </Container>
+  );
+}
+
+function About() {
+  return (
+    <Container size="md" py={60}>
+      <Stack>
+        <Title order={2}>About</Title>
+        <Text>
+          I build responsive, accessible interfaces using React and Next.js. I
+          focus on clean architecture and maintainable UI systems.
+        </Text>
+        <Group>
+          <Badge>React</Badge>
+          <Badge>TypeScript</Badge>
+          <Badge>Next.js</Badge>
+          <Badge>Mantine</Badge>
+        </Group>
+      </Stack>
+    </Container>
+  );
+}
+
+function ProjectCard({ title, description, role, tech, impact }: any) {
+  return (
+    <Card shadow="sm" padding="lg" radius="md" withBorder>
+      <Stack>
+        <Title order={3}>{title}</Title>
+        <Text>{description}</Text>
+        <Text size="sm">
+          <b>Role:</b> {role}
+        </Text>
+        <Text size="sm">
+          <b>Tech:</b> {tech.join(", ")}
+        </Text>
+        <Text size="sm">
+          <b>Impact:</b> {impact}
+        </Text>
+      </Stack>
+    </Card>
+  );
+}
+
+function Projects() {
+  return (
+    <Container size="md" py={60} id="projects">
+      <Stack>
+        <Title order={2}>Projects</Title>
+
+        <ProjectCard
+          title="Localization Management Interface"
+          description="A web app for managing translation workflows."
+          role="Frontend Developer"
+          tech={["React", "TypeScript", "Mantine"]}
+          impact="Improved usability and reduced configuration time."
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        <ProjectCard
+          title="Portfolio CMS"
+          description="Portfolio powered by headless CMS."
+          role="Fullstack Developer"
+          tech={["Next.js", "WordPress", "ACF"]}
+          impact="Enables dynamic content updates without code changes."
+        />
+      </Stack>
+    </Container>
+  );
+}
+
+function Contact() {
+  return (
+    <Container size="md" py={60} id="contact">
+      <Stack>
+        <Title order={2}>Contact</Title>
+        <Text>Email: dani@email.com</Text>
+        <Text>GitHub: github.com/username</Text>
+      </Stack>
+    </Container>
+  );
+}
+
+export default function Page() {
+  return (
+    <main>
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+    </main>
   );
 }
