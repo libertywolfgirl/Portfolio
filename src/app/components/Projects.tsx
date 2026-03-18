@@ -15,7 +15,7 @@ const projects = [
     title: "Liberty's Wolf Den",
     description: "Personal fanfiction website.",
     role: "Fullstack Developer",
-    tech: ["React", "TypeScript", "Mantine"],
+    tech: ["React", "TypeScript", "Mantine", "Sanity"],
     impact:
       "Developed the website independently to share stories with the world.",
     url: "https://libertys-wolf-den.vercel.app/",
@@ -24,9 +24,19 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Container size="md" py={60} id="projects">
+    <Container
+      w="100%"
+      size="md"
+      py={60}
+      id="projects"
+      px={40}
+      bg="blue.0"
+      bdrs={25}
+    >
       <Stack>
-        <Title order={2}>Projects</Title>
+        <Title order={2} c="gray.8">
+          Projects
+        </Title>
         {projects.map((project) => (
           <ProjectCard
             key={project.title}

@@ -20,7 +20,9 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider theme={{ primaryColor: "cyan" }}>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
