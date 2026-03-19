@@ -25,18 +25,16 @@ const projects = [
 const Projects = () => {
   return (
     <Container
+      variant="blue"
       w="100%"
       size="md"
       py={60}
       id="projects"
       px={40}
-      bg="blue.0"
       bdrs={25}
     >
       <Stack>
-        <Title order={2} c="gray.8">
-          Projects
-        </Title>
+        <Title order={2}>Projects</Title>
         {projects.map((project) => (
           <ProjectCard
             key={project.title}

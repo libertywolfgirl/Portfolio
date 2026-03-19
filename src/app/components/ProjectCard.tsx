@@ -21,17 +21,15 @@ const ProjectCard = ({
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
       <Stack>
-        <Title order={3} c="gray.8">
-          {title}
-        </Title>
-        <Text c="gray.8">{description}</Text>
-        <Text size="sm" c="gray.8">
+        <Title order={3}>{title}</Title>
+        <Text>{description}</Text>
+        <Text size="sm">
           <b>Role:</b> {role}
         </Text>
-        <Text size="sm" c="gray.8">
+        <Text size="sm">
           <b>Tech:</b> {tech.join(", ")}
         </Text>
-        <Text size="sm" c="gray.8">
+        <Text size="sm">
           <b>Impact:</b> {impact}
         </Text>
         <Link href={url} target="_blank">
