@@ -1,4 +1,4 @@
-import "@mantine/core/styles.css";
+import "@mantine/core/styles.layer.css";
 import {
   ColorSchemeScript,
   mantineHtmlProps,
