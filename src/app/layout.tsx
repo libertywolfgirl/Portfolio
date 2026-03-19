@@ -6,6 +6,11 @@ import {
 } from "@mantine/core";
 import { theme } from "@/theme/theme";
 
+export const metadata = {
+  title: "Dani's Portfolio",
+  description: "A front end web developer professional portfolio ",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -19,6 +24,7 @@ export default function RootLayout({
         <title>Dani&apos;s Portfolio</title>
 
         <ColorSchemeScript />
+        <link rel="shortcut icon" href="/favicon.png" />
       </head>
       <body>
         <MantineProvider theme={theme}>{children}</MantineProvider>

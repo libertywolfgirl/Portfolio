@@ -6,12 +6,14 @@ import Projects from "./components/Projects";
 
 const Page = () => {
   return (
-    <Stack gap="xl" my="lg">
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </Stack>
+    <main>
+      <Stack gap="xl" my="lg">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </Stack>
+    </main>
   );
 };
 
