@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 const Page = () => {
   return (
     <main>
-      <Stack gap="xl" my="lg">
+      <Stack gap="xl" my="lg" px="md">
         <Hero />
         <About />
         <Projects />

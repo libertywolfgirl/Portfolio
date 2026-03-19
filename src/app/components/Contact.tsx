@@ -6,8 +6,8 @@ const Contact = () => {
       variant="teal"
       w="100%"
       size="md"
-      py={60}
-      px={40}
+      py={{ base: 30, md: 60 }}
+      px={{ base: 20, md: 40 }}
       bdrs={25}
       id="contact"
     >

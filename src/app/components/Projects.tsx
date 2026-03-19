@@ -28,9 +28,9 @@ const Projects = () => {
       variant="blue"
       w="100%"
       size="md"
-      py={60}
+      py={{ base: 30, md: 60 }}
       id="projects"
-      px={40}
+      px={{ base: 20, md: 40 }}
       bdrs={25}
     >
       <Stack>

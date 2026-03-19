@@ -13,7 +13,14 @@ import {
 
 const Hero = () => {
   return (
-    <Container variant="blue" w="100%" size="md" py={80} px={40} bdrs={25}>
+    <Container
+      variant="blue"
+      w="100%"
+      size="md"
+      py={{ base: 40, md: 80 }}
+      px={{ base: 20, md: 40 }}
+      bdrs={25}
+    >
       <Stack gap="md">
         <Flex justify="center">
           <ColorSchemeToggle />
