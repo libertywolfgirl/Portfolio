@@ -27,8 +27,8 @@ const Hero = () => {
         </Flex>
         <Title order={1}>Hi, I&apos;m Dani</Title>
         <Text size="lg">
-          Frontend Developer specializing in React, TypeScript, and scalable UI
-          systems.
+          Full Stack Developer specializing in React, TypeScript, and scalable
+          UI systems.
         </Text>
         <Group>
           <Button component="a" href="#projects">

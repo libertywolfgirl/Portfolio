@@ -14,7 +14,8 @@ const About = () => {
         <Title order={2}>About</Title>
         <Text>
           I build responsive, accessible interfaces using React and Next.js. I
-          focus on clean architecture and maintainable UI systems.
+          focus on clean architecture and maintainable UI systems. Recently, I
+          have been exploring the backend with Python.
         </Text>
         <Group>
           <Badge>React</Badge>
@@ -24,6 +25,8 @@ const About = () => {
           <Badge>WordPress</Badge>
           <Badge>Sanity</Badge>
           <Badge>Jest</Badge>
+          <Badge>Python</Badge>
+          <Badge>Flask</Badge>
         </Group>
       </Stack>
     </Container>

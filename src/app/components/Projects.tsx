@@ -20,6 +20,15 @@ const projects = [
       "Developed the website independently to share stories with the world.",
     url: "https://libertys-wolf-den.vercel.app/",
   },
+  {
+    title: "Python Portfolio",
+    description: "Personal portfolio website built with Python and Flask.",
+    role: "Fullstack Developer",
+    tech: ["Python", "Flask", "HTML", "CSS"],
+    impact:
+      "Created a responsive portfolio website to showcase my projects and skills.",
+    url: "https://libertywolfgirl.pythonanywhere.com/index.html",
+  },
 ];
 
 const Projects = () => {
