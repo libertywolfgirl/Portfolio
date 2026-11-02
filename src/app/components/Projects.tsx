@@ -21,6 +21,16 @@ const projects = [
     url: "https://libertys-wolf-den.vercel.app/",
   },
   {
+    title: "Stocked",
+    description:
+      "Pantry website built with React, Django, and SQLite.",
+    role: "Fullstack Developer",
+    tech: ["React", "Django", "SQLite"],
+    impact:
+      "Developed a pantry website where users can track their pantry ingredients and recipes along with checking to see if they have every ingredient needed for a particular recipe.",
+    url: "https://stocked-lac-two.vercel.app/",
+  },
+  {
     title: "Python Portfolio",
     description:
       "Personal portfolio website built with Python, Flask, and Django.",

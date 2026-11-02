@@ -27,6 +27,10 @@ const About = () => {
           <Badge>Jest</Badge>
           <Badge>Python</Badge>
           <Badge>Flask</Badge>
+          <Badge>Django</Badge>
+          <Badge>SQLite</Badge>
+          <Badge>HTML</Badge>
+          <Badge>CSS</Badge>
         </Group>
       </Stack>
     </Container>
